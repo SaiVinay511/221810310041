@@ -1,0 +1,79 @@
+sys59@DESKTOP-U9JLD93 MINGW64 ~/desktop/problemsolvingprogramming/Git (master)
+$ ls
+ file1.txt  'file1.txt '   TEST2/
+
+sys59@DESKTOP-U9JLD93 MINGW64 ~/desktop/problemsolvingprogramming/Git (master)
+$ mkdir 221810310041
+
+sys59@DESKTOP-U9JLD93 MINGW64 ~/desktop/problemsolvingprogramming/Git (master)
+$ git remote help
+error: Unknown subcommand: help
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+sys59@DESKTOP-U9JLD93 MINGW64 ~/desktop/problemsolvingprogramming/Git (master)
+$ git remote add 221810310041 https://github.com/SaiVinay511/221810310041
+
+sys59@DESKTOP-U9JLD93 MINGW64 ~/desktop/problemsolvingprogramming/Git (master)
+$ git remote -origin
+error: unknown switch `o'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+sys59@DESKTOP-U9JLD93 MINGW64 ~/desktop/problemsolvingprogramming/Git (master)
+$ git remote show
+221810310041
+
+sys59@DESKTOP-U9JLD93 MINGW64 ~/desktop/problemsolvingprogramming/Git (master)
+$ git remote -v
+221810310041    https://github.com/SaiVinay511/221810310041 (fetch)
+221810310041    https://github.com/SaiVinay511/221810310041 (push)
+
+sys59@DESKTOP-U9JLD93 MINGW64 ~/desktop/problemsolvingprogramming/Git (master)
+$ git pull 221810310041 master
+
+
+fatal: unable to access 'https://github.com/SaiVinay511/221810310041/': Failed to connect to github.com port 443: Timed out
+
+sys59@DESKTOP-U9JLD93 MINGW64 ~/desktop/problemsolvingprogramming/Git (master)
+$
+
+sys59@DESKTOP-U9JLD93 MINGW64 ~/desktop/problemsolvingprogramming/Git (master)
+$
+
+sys59@DESKTOP-U9JLD93 MINGW64 ~/desktop/problemsolvingprogramming/Git (master)
+$ git pull 221810310041 master
+fatal: unable to access 'https://github.com/SaiVinay511/221810310041/': Failed to connect to github.com port 443: Timed out
+
+sys59@DESKTOP-U9JLD93 MINGW64 ~/desktop/problemsolvingprogramming/Git (master)
+git push -u 221810310041
+sys59@DESKTOP-U9JLD93 MINGW64 ~/desktop/problemsolvingprogramming/Git (master)
+git push --set-upstream 221810310041 master
